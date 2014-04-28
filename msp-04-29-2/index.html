@@ -50,7 +50,7 @@ src="signalr/hubs"></script>
 <script
 type="text/javascript">
 $(function(){
-var chat = $.connection.chatHub;
+var chat = $connection.chatHub;
 chat.client.broadcastMessage=function(name,message){varencodedName=$('<div/>').text(name).html();
 var encodedMsg=$('<div/>').text(message).html();
 $('#discussion').append('<li><strong>'+encodedName+'</strong>:&nbsp;&nbsp;'+encodedMsg+'</li>');
