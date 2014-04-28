@@ -23,5 +23,11 @@
 　　<script src="Scripts/jquery-1.6.4.min.js" ></script>
 　　<script src="Scripts/jquery.signalR-2.0.3.min.js"></script>
 　　<script src="signalr/hubs"></script>
+　　<script type="text/javascript">
+     $(function (){
+       var chat = $.connection.chatHub;
+       $('#displayname').val(prompt('Enter your name:', ''));
+     });
+     </script>
 </body>
 </html>
