@@ -8,18 +8,12 @@ content=”text/html;charset=utf-­‐8”/>
 Chat</title>
 <style
 type="text/css">
-.container
-{
-background-­‐color:
-#99CCFF;
-border:
-thick
-solid
+.container{
+background-­‐color:#99CCFF;
+border:thick solid
 #808080;
-padding:
-20px;
-margin:
-20px;
+padding:20px;
+margin:20px;
 }
 </style>
 </head>
@@ -61,10 +55,7 @@ chat.client.broadcastMessage=function(name,message){varencodedName=$('<div/>').t
 var encodedMsg=$('<div/>').text(message).html();
 $('#discussion').append('<li><strong>'+encodedName+'</strong>:&nbsp;&nbsp;'+encodedMsg+'</li>');
 };
-$('#displayname').val(prompt('Enter
-your
-name:',
-''));
+$('#displayname').val(prompt('Enter your name:',''));
 });
 </script>
 
