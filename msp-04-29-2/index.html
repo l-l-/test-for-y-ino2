@@ -24,7 +24,7 @@
 　　<script src="Scripts/jquery.signalR-2.0.3.min.js"></script>
 　　<script src="signalr/hubs"></script>
 　　<script type="text/javascript">
-     $(function (){
+     $(function(){
        var chat = $.connection.chatHub;
        chat.client.broadcastMessage = function (name, message) {
          var encodedName = $('<div />').text(name).html();
