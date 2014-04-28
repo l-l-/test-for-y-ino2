@@ -1,29 +1,29 @@
-<!DOCTYPE html>
-<html xmlns=hhttp://www.w3.org/1999/xhtmlh>
+ï»¿<!DOCTYPE html>
+<html xmlns=â€http://www.w3.org/1999/xhtmlâ€>
 <head>
-<meta http-equiv=hContent-Typeh content=htext/html;charset=utf-8h/>
+<meta http-equiv=â€Content-Typeâ€ content=â€text/html;charset=utf-8â€/>
 	<title>SignalR Chat</title>
 	<style type="text/css">
-@@.container {
-@@@@background-color: #99CCFF;
-@@@@border: thick solid #808080;
-@@@@padding: 20px;
-@@@@margin: 20px;
-@@}
+ã€€ã€€.container {
+ã€€ã€€ã€€ã€€background-color: #99CCFF;
+ã€€ã€€ã€€ã€€border: thick solid #808080;
+ã€€ã€€ã€€ã€€padding: 20px;
+ã€€ã€€ã€€ã€€margin: 20px;
+ã€€ã€€}
 </style>
 
 </head>
 <body>
-@@<div class="container">
-@@@@<input type="text" id="message" />
-@@@@<input type="button" id="sendmessage" value="Send" />
-@@@@<input type="hidden" id="displayname" />
-@@@@<ul id="discussion"></ul>
-@@</div>
-@@<script src="Scripts/jquery-1.6.4.min.js" ></script>
-@@<script src="Scripts/jquery.signalR-2.0.3.min.js"></script>
-@@<script src="signalr/hubs"></script>
-@@<script type="text/javascript">
+ã€€ã€€<div class="container">
+ã€€ã€€ã€€ã€€<input type="text" id="message" />
+ã€€ã€€ã€€ã€€<input type="button" id="sendmessage" value="Send" />
+ã€€ã€€ã€€ã€€<input type="hidden" id="displayname" />
+ã€€ã€€ã€€ã€€<ul id="discussion"></ul>
+ã€€ã€€</div>
+ã€€ã€€<script src="Scripts/jquery-1.6.4.min.js" ></script>
+ã€€ã€€<script src="Scripts/jquery.signalR-2.0.3.min.js"></script>
+ã€€ã€€<script src="signalr/hubs"></script>
+ã€€ã€€<script type="text/javascript">
      $(function (){
        var chat = $.connection.chatHub;
        chat.client.broadcastMessage = function (name, message) {
